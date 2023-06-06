@@ -1,0 +1,133 @@
+body, html {
+    -webkit-overflow-scrolling: touch;
+    /*background-color: #f0f0f0;*/
+    margin: 0 auto;
+    min-height: 100vh;
+    min-width: 100%;
+    width: 320px;
+    height: 100%;
+    font-family: "TT Lakes", Fallback, sans-serif;
+}
+
+header {
+    /*padding-top: 16px;*/
+    position: relative;
+    z-index: 70;
+    /*background-color: pink;*/
+}
+
+.container {
+    max-width: 320px;
+    margin: 10px auto;
+    padding: 0 16px;
+}
+
+
+.header-items__item-container {
+    display: flex;
+    min-width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 20px;
+}
+
+.header-items__container {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.header-items__container > * {*/
+/*    margin-right: 15px;*/
+/*}*/
+
+/*.header-items__container > div:last-child {*/
+/*    margin-right: 0;*/
+/*}*/
+
+.header-items__item-status,
+.header-items__item-repair,
+.header-items__item-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-items__item-divider {
+    min-width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: #EAEAEA;
+}
+
+.shadow-line {
+    position: absolute;
+    width: 100%;
+    min-height: 1px;
+    background: #D9FFF5;
+}
+
+main {
+    min-height: 100%;
+    padding-top: 24px;
+    background: #F8F8F8;
+}
+
+.main__title {
+    margin: 0;
+    padding: 0;
+}
+
+.main__title-highlight {
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background: #41F6D7;
+    transform: matrix(-1, 0, 0, 0);
+    border-radius: 2px;
+}
+
+.main__title-text h1 {
+    margin: 0;
+    /*margin-left: 16px;*/
+    font-size: 28px;
+}
+
+.swiper-container {
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    touch-action: pan-y;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    max-width: max-content;
+    padding: 8px 15px;
+    margin-right: 15px;
+    color: #7E7E82;
+    font-size: 16px;
+    border: 0;
+    background: 0;
+}
+
+/*.swiper-slide:active {*/
+/*    background: white;*/
+/*    border: 2px solid #B8FFEC;*/
+/*    border-radius: 10px;*/
+/*}*/
