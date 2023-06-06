@@ -3,8 +3,8 @@ body, html {
     /*background-color: #f0f0f0;*/
     margin: 0 auto;
     min-height: 100vh;
-    min-width: 100%;
-    width: 320px;
+    min-width: 320px;
+    width: 100%;
     height: 100%;
     font-family: "TT Lakes", Fallback, sans-serif;
 }
@@ -17,9 +17,25 @@ header {
 }
 
 .container {
-    max-width: 320px;
-    margin: 10px auto;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 0 16px;
+}
+
+@media (min-width: 767px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 32px;
+    }
 }
 
 
@@ -38,6 +54,7 @@ header {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 0;
 }
 
 /*.header-items__container > * {*/
@@ -142,10 +159,6 @@ main {
     border-radius: 10px;
 }
 
-.swiper-slide:hover {
-    text-decoration: underline;
-}
-
 .main-content {
     width: 100%;
 }
@@ -174,9 +187,15 @@ main {
     margin-left: 16px;
 }
 
+.image-company {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .image-company__image {
-    max-width: 100%;
-    mask-image: revert;
+    width: 100%;
+    /*mask-image: revert;*/
 }
 
 .swiper-slide-active {
