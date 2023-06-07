@@ -262,6 +262,7 @@ button {
         justify-content: flex-end;
         margin-right: auto;
         margin-left: auto;
+        margin-top: 0;
     }
 
     .image-block__container {
