@@ -26,7 +26,7 @@ header {
     display: none;
 }
 
-.header-items__item-container {
+.items-container__background {
     display: flex;
     justify-content: space-between;
     min-width: 40px;
@@ -35,7 +35,7 @@ header {
     border-radius: 20px;
 }
 
-.header-items__container {
+.items-container {
     display: flex;
     max-width: 100%;
     /*justify-content: space-between;*/
@@ -65,12 +65,12 @@ header {
     margin-right: 0;
 }
 
-.header-items__item-status,
-.header-items__item-repair,
-.header-items__item-burger,
-.header-items__item-chat,
-.header-items__item-call,
-.header-items__item-profile{
+.items-container__item-status,
+.items-container__item-repair,
+.items-container__item-burger,
+.items-container__item-chat,
+.items-container__item-call,
+.items-container__item-profile{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,12 +99,7 @@ main {
     background: #F8F8F8;
 }
 
-.main__title {
-    margin: 0;
-    padding: 0;
-}
-
-.main__title-highlight {
+.title-highlight {
     position: absolute;
     width: 4px;
     height: 40px;
@@ -113,7 +108,7 @@ main {
     border-radius: 2px;
 }
 
-.main__title-text h1 {
+.title-text h1 {
     margin: 0;
     /*margin-left: 16px;*/
     font-size: 28px;
@@ -173,7 +168,7 @@ button {
     width: 100%;
 }
 
-.main-content__text {
+.text-block__text {
     order: 1;
     width: 100%;
     font-size: 14px;
@@ -202,13 +197,13 @@ button {
     margin-left: 16px;
 }
 
-.image-company {
+.image-container {
     order: 3;
     width: 100%;
     margin-top: 16px;
 }
 
-.image-company__image {
+.image-container__image {
     position: absolute;
     width: 100%;
     min-width: 320px;
@@ -226,8 +221,8 @@ button {
     padding: 0 16px;
 }
 
-.status-text,
-.repair-text {
+.items-container__status-text,
+.items-container__repair-text {
     display: none;
 }
 
@@ -253,7 +248,7 @@ button {
     }
 
     .header-items__item-logo,
-    .header-items__item-container {
+    .items-container__background {
         margin-right: auto;
     }
 
@@ -282,7 +277,7 @@ button {
         margin-left: auto;
     }
 
-    .image-company {
+    .image-container {
         display: flex;
         position: static;
         margin-top: 0;
@@ -290,7 +285,7 @@ button {
         margin-left: 10px;
         /*margin-right: auto;*/
     }
-    .image-company__image {
+    .image-container__image {
         position: static;
         width: 360px;
         height: auto;
@@ -323,8 +318,8 @@ button {
         display: none;
     }
 
-    .second-block > .status-text,
-    .second-block > .repair-text {
+    .second-block > .items-container__status-text,
+    .second-block > .items-container__repair-text {
         display: block;
         align-self: center;
         margin-right: 5px;
@@ -338,7 +333,7 @@ button {
         margin-right: 32px;
     }
 
-    .image-company {
+    .image-container {
         display: flex;
         position: static;
         margin-top: 0;
@@ -347,7 +342,7 @@ button {
         /*margin-right: auto;*/
     }
 
-    .image-company__image {
+    .image-container__image {
         position: static;
         width: 100%;
         max-width: 100vh;
