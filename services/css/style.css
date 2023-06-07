@@ -213,7 +213,7 @@ button {
     width: 100%;
     min-width: 320px;
     height: auto;
-    left: 0%;
+    left: 0;
 }
 
 .swiper-slide-active {
@@ -349,7 +349,8 @@ button {
 
     .image-company__image {
         position: static;
-        width: 530px;
+        width: 100%;
+        max-width: 100vh;
         height: auto;
         border-radius: 6px;
         left: auto;
