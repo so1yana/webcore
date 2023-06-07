@@ -2,7 +2,6 @@ let prevActive = '';
 let curActive = document.querySelector('.active');
 let prevMinHeight = '';
 document.body.addEventListener("click", function(event) {
-    // console.log(event.target.classList[0], 'swiper-slide' === event.target.classList[0])
     if (event.target.nodeName === "BUTTON") {
         if ('swiper-slide' === event.target.classList[0])
             if (event.target.id !== curActive.id) {
@@ -10,7 +9,6 @@ document.body.addEventListener("click", function(event) {
                 prevActive = curActive;
                 curActive = event.target;
                 prevActive.classList.remove('active');
-                // console.log("Clicked", event.target);
             }
         if (event.target.classList[0] === 'read-more__button') {
             // let el = document.querySelector('.main-content__text');
@@ -22,6 +20,7 @@ document.body.addEventListener("click", function(event) {
             //     elStyles.maxHeight = '90px';
             // }
         }
+        else {}
     }
 });
 
