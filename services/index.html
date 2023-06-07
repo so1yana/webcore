@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=320">
+<!--    <meta name="viewport" content="width=320">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/TTLakes/stylesheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -12,23 +13,45 @@
     <header class="header-items">
         <div class="container">
             <div class="header-items__container">
-                <div class="header-items__item-container">
-                    <div class="header-items__item-burger">
-                        <img src="img/menu.svg" alt="burger">
+                <div class="first-block">
+                    <div class="header-items__item-container" id="item-burger">
+                        <div class="header-items__item-burger">
+                            <img src="img/menu.svg" alt="burger">
+                        </div>
+                    </div>
+                    <div class="header-items__item-divider" id="divider1"></div>
+                    <div class="header-items__item-logo" id="item-logo">
+                        <img src="img/logo.svg" alt="logo">
                     </div>
                 </div>
-                <div class="header-items__item-logo">
-                    <img src="img/logo.svg" alt="logo">
-                </div>
-                <div class="header-items__item-divider"></div>
-                <div class="header-items__item-container">
-                    <div class="header-items__item-repair">
-                        <img src="img/settings.svg" alt="repair">
+                <div class="second-block">
+                    <div class="header-items__item-container" id="item-call">
+                        <div class="header-items__item-call">
+                            <img src="img/call.svg" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="header-items__item-container">
-                    <div class="header-items__item-status">
-                        <img src="img/search.svg" alt="status">
+                    <div class="header-items__item-container" id="item-chat">
+                        <div class="header-items__item-chat">
+                            <img src="img/chat.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header-items__item-container" id="item-profile">
+                        <div class="header-items__item-profile">
+                            <img src="img/profile.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header-items__item-divider" id="divider2"></div>
+                    <div class="repair-text">Оставить заявку</div>
+                    <div class="header-items__item-container"  id="item-repair">
+                        <div class="header-items__item-repair">
+                            <img src="img/settings.svg" alt="repair">
+                        </div>
+                    </div>
+                    <div class="status-text">Статус ремонта</div>
+                    <div class="header-items__item-container" id="item-status">
+                        <div class="header-items__item-status">
+                            <img src="img/search.svg" alt="status">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -52,22 +75,31 @@
                 </div>
             </div>
             <div class="main-content">
-                <div class="main-content__text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                </div>
-                <div class="read-more">
-                    <div class="read-more__expand">
-                        <img src="img/readmore.svg" alt="expand">
+                <div class="text-block">
+                    <div class="main-content__text">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и,
+                        в свою очередь, советуют нас родным и близким.
                     </div>
-                    <div class="read-more__text">
-                        Читать далее
+                    <div class="read-more">
+                        <div class="read-more__expand">
+                            <img src="img/readmore.svg" alt="expand">
+                        </div>
+                        <button class="read-more__button">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+                <div class="image-block">
+                    <div class="image-company">
+                        <img class="image-company__image" src="img/company.png" alt="company">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="image-company">
-            <img class="image-company__image" src="img/company.png" alt="company">
-        </div>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
