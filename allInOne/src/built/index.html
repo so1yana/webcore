@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="fonts/TTLakes/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <title>Сервисы</title>
+</head>
+<body class="main-page">
+    <div class="burger-backdrop burger--hidden">
+        <div class="burger">
+            <div class="burger-container">
+                <div class="burger__header">
+                    <button class="circle-button button-close" type="button"><span></span></button>
+                    <img src="img/logo.svg" alt="logo">
+                    <button class="circle-button button-search" type="button"><span></span></button>
+                </div>
+                <div class="burger__view-component">
+                    <ul class="burger__navigation-list">
+                        <li class="burger__list-item"><button class="list-button list-button--active" type="button">Ремонт техники</button></li>
+                        <li class="burger__list-item"><button class="list-button" type="button">Услуги и сервисы</button></li>
+                        <li class="burger__list-item"><button class="list-button" type="button">Корпоративным клиентам</button></li>
+                        <li class="burger__list-item"><button class="list-button" type="button">Продавцам техники</button></li>
+                        <li class="burger__list-item"><button class="list-button" type="button">Партнерам</button></li>
+                        <li class="burger__list-item"><button class="list-button" type="button">Производителям</button></li>
+                        <li class="burger__list-item"><button class="list-button" type="button">Наши сервисные цены</button></li>
+                        <li class="burger__list-item"><button class="list-button" type="button">Контакты</button></li>
+                    </ul>
+                    <div class="burger__footer">
+                        <div class="footer-buttons">
+                            <button class="circle-button button-call" type="button"><span></span></button>
+                            <button class="circle-button button-message" type="button"><span></span></button>
+                            <button class="circle-button button-profile" type="button"><span></span></button>
+                        </div>
+                        <div class="mail-address">
+                            <span>mail@cps.com</span>
+                        </div>
+                        <div class="number-phone">
+                            <span>8 800 890 8900</span>
+                        </div>
+                        <div class="languages-list">
+                            <button class="languages-list__language-item language-active">RU</button>
+                            <button class="languages-list__language-item">EN</button>
+                            <button class="languages-list__language-item">CH</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <header class="header-items">
+            <div class="container">
+                <div class="items-container">
+                    <div class="first-block">
+                        <button class="circle-button button-burger" type="button" id="item-burger"><span></span></button>
+                        <div class="items-container__item-divider" id="divider1"></div>
+                        <div class="items-container__item-logo" id="item-logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="second-block">
+                        <button class="circle-button button-call" type="button" id="item-call"><span></span></button>
+                        <button class="circle-button button-message" type="button" id="item-chat"><span></span></button>
+                        <button class="circle-button button-profile" type="button" id="item-profile"><span></span></button>
+                        <div class="items-container__item-divider" id="divider2"></div>
+                        <div class="items-container__repair-text">Оставить заявку</div>
+                        <button class="circle-button button-repair" type="button" id="item-repair"><span></span></button>
+                        <div class="items-container__status-text">Статус ремонта</div>
+                        <button class="circle-button button-status" type="button" id="item-status"><span></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-line"></div>
+        </header>
+        <main class="main">
+            <div class="title-highlight"></div>
+            <div class="container">
+                <div class="title-text">
+                    <h1>Услуги и сервисы</h1>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <button class="swiper-slide active" id="fstBtn">Ремонтируемые устройства</button>
+                        <button class="swiper-slide" id="sndBtn">Дополнительные услуги</button>
+                        <button class="swiper-slide" id="trdBtn">Цены на услуги</button>
+                        <button class="swiper-slide" id="fthBtn">Адреса сервисных центров</button>
+                        <button class="swiper-slide" id="ffthBtn">Специальные цены</button>
+                        <button class="swiper-slide" id="sthBtn">Отзывы</button>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="text-block">
+                        <div class="text-block__text">
+                            Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                            большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и,
+                            в свою очередь, советуют нас родным и близким.
+                        </div>
+                        <div class="read-more">
+                            <div class="read-more__expand">
+                                <img src="img/readmore.svg" alt="expand">
+                            </div>
+                            <button class="read-more__button">
+                                Читать далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <div class="image-block__container">
+                            <img class="image-block__image" src="img/company.png" alt="company">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
