@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/block_company.css">
     <link rel="stylesheet" href="fonts/TTLakes/stylesheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <title>Сервисы</title>
 </head>
 <body class="main-page">
+    <div class="scroll-fix"></div>
     <div class="burger-backdrop burger--hidden">
         <div class="burger">
             <div class="burger-container">
@@ -53,43 +55,65 @@
     </div>
     <div class="page">
         <header class="header-items">
-            <div class="container">
-                <div class="items-container">
-                    <div class="first-block">
-                        <button class="circle-button button-burger" type="button" id="item-burger"><span></span></button>
-                        <div class="items-container__item-divider" id="divider1"></div>
-                        <div class="items-container__item-logo" id="item-logo">
-                            <img src="img/logo.svg" alt="logo">
-                        </div>
+            <div class="items-container">
+                <div class="first-block">
+                    <button class="circle-button button-burger" type="button" id="item-burger"><span></span></button>
+                    <div class="items-container__item-divider" id="divider1"></div>
+                    <div class="items-container__item-logo" id="item-logo">
+                        <img src="img/logo.svg" alt="logo">
                     </div>
-                    <div class="second-block">
-                        <button class="circle-button button-call" type="button" id="item-call"><span></span></button>
-                        <button class="circle-button button-message" type="button" id="item-chat"><span></span></button>
-                        <button class="circle-button button-profile" type="button" id="item-profile"><span></span></button>
-                        <div class="items-container__item-divider" id="divider2"></div>
-                        <div class="items-container__repair-text">Оставить заявку</div>
-                        <button class="circle-button button-repair" type="button" id="item-repair"><span></span></button>
-                        <div class="items-container__status-text">Статус ремонта</div>
-                        <button class="circle-button button-status" type="button" id="item-status"><span></span></button>
-                    </div>
+                </div>
+                <div class="second-block">
+                    <button class="circle-button button-call" type="button" id="item-call"><span></span></button>
+                    <button class="circle-button button-message" type="button" id="item-chat"><span></span></button>
+                    <button class="circle-button button-profile" type="button" id="item-profile"><span></span></button>
+                    <div class="items-container__item-divider" id="divider2"></div>
+                    <div class="items-container__repair-text">Оставить заявку</div>
+                    <button class="circle-button button-repair" type="button" id="item-repair"><span></span></button>
+                    <div class="items-container__status-text">Статус ремонта</div>
+                    <button class="circle-button button-status" type="button" id="item-status"><span></span></button>
                 </div>
             </div>
             <div class="shadow-line"></div>
         </header>
         <main class="main">
             <div class="title-highlight"></div>
-            <div class="container">
+            <div class="main-block">
                 <div class="title-text">
                     <h1>Услуги и сервисы</h1>
                 </div>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <button class="swiper-slide active" id="fstBtn">Ремонтируемые устройства</button>
-                        <button class="swiper-slide" id="sndBtn">Дополнительные услуги</button>
-                        <button class="swiper-slide" id="trdBtn">Цены на услуги</button>
-                        <button class="swiper-slide" id="fthBtn">Адреса сервисных центров</button>
-                        <button class="swiper-slide" id="ffthBtn">Специальные цены</button>
-                        <button class="swiper-slide" id="sthBtn">Отзывы</button>
+                <div class="swiper-container swiper-container-services">
+                    <div class="swiper-wrapper swiper-wrapper-services">
+                        <div class="swiper-slide swiper-slide-services active">
+                            <div class="slide-container-services">
+                                <button class="swiper-slide-button">Ремонтируемые устройства</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <div class="slide-container-services">
+                                <button class="swiper-slide-button">Дополнительные услуги</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <div class="slide-container-services">
+                                <button class="swiper-slide-button">Цены на услуги</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <div class="slide-container-services">
+                                <button class="swiper-slide-button">Адреса сервисных центров</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <div class="slide-container-services">
+                                <button class="swiper-slide-button">Специальные цены</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <div class="slide-container-services">
+                                <button class="swiper-slide-button">Отзывы</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="main-content">
@@ -101,11 +125,11 @@
                             большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и,
                             в свою очередь, советуют нас родным и близким.
                         </div>
-                        <div class="read-more">
-                            <div class="read-more__expand">
+                        <div class="read-more-services">
+                            <div class="read-more__expand-services">
                                 <img src="img/readmore.svg" alt="expand">
                             </div>
-                            <button class="read-more__button">
+                            <button class="read-more__button-text">
                                 Читать далее
                             </button>
                         </div>
@@ -117,9 +141,101 @@
                     </div>
                 </div>
             </div>
+            <div class="brand-companies">
+                <h2>Ремонт различных брендов техники</h2>
+                <div id="companies-list" class="companies-list hidden">
+                    <div class="swiper-container swiper-container-brands">
+                        <div class="swiper-wrapper swiper-wrapper-brands">
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/lenovo.png" alt="lenovo">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/samsung.png" alt="samsung">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/apple.png" alt="apple">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/bosch.png" alt="bosch">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/hp.png" alt="hp">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/acer.png" alt="acer">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/vsonic.png" alt="vsonic">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/sony.png" alt="sony">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/lenovo.png" alt="lenovo">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/samsung.png" alt="samsung">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/apple.png" alt="apple">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-brands">
+                                <div class="slide-container">
+                                    <img class="slide-image" src="img/bosch.png" alt="bosch">
+                                    <button class="slide-button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="read-more">
+                    <div id="read-more__expand" class="read-more__expand">
+                        <img id="read-more__img" class="read-more__img" src="img/readmore.svg" alt="expand">
+                    </div>
+                    <button class="read-more__button-brands">
+                        <span id="read-more__text" class="read-more__text">Показать всё</span>
+                    </button>
+                </div>
+            </div>
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/block1-5.js"></script>
+    <script src="js/windowHandler.js"></script>
 </body>
 </html>
